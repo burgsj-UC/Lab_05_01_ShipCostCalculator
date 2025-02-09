@@ -4,9 +4,10 @@ import java.util.Scanner;
 public class ShipCostCalculator {
     public static void main(String[] args) {
 
-        double itemCost;
+        double itemCost = 0;
         double shipCost = 0;
         double SHIPPING_RATE = 0.02;
+        double totalCost;
 
         Scanner in = new Scanner(System.in);
         System.out.print("Please enter the price of the item: ");
@@ -21,6 +22,10 @@ public class ShipCostCalculator {
                 shipCost = itemCost * SHIPPING_RATE;
             }
         }
-        System.out.print("Your shipping cost will be: $" + shipCost);
+
+        totalCost = itemCost + shipCost;
+
+        System.out.println("Your shipping cost will be: $" + shipCost);
+        System.out.println("Your total cost will be: $" + totalCost);
     }
 }
