@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ShipCostCalculator {
     public static void main(String[] args) {
 
-        double itemCost = 0;
+        double itemCost;
         double shipCost = 0;
         double SHIPPING_RATE = 0.02;
 
