@@ -13,6 +13,7 @@ public class ShipCostCalculator {
 
         if (in.hasNextDouble()) {
             itemCost = in.nextDouble();
+            in.nextLine();
             if (itemCost >= 100) {
                 shipCost = 0;
             }
